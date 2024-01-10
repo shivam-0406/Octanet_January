@@ -1,0 +1,2 @@
+This is a simple Todo list.
+made with HTML, JAVAScript and CSS

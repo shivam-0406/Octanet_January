@@ -1,0 +1,162 @@
+:root{
+    --white: #fff;
+    --white-alpha-40: rgba(255,255,255,0.4);
+    --white-alpha-25: rgba(255,255,255,0.25);
+}
+
+body{
+    font-family: Arial, sans-serif;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #c7ca6b 0%, #f7c479 100%);
+    background-color: transparent;
+}
+
+.todo{
+    width: 500px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    border-radius: 25px;
+}
+
+.todo #task{
+    padding: 10px 8px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 2px solid grey;
+}
+
+.todo #b1{
+    padding: 8px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: #77e02b;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.todo #b1:hover{
+    background-color: #4CAF05;
+    transition: 0.4s;
+    color: #fff;
+    border: 2px solid var(--white-alpha-40);
+}
+
+ul{
+    text-align: center;
+    padding: 15px;
+}
+
+ul p {
+    padding: 5px 15px;
+    text-align: left;
+    border: 2px solid var(--white-alpha-40);
+    border-radius: 15px;
+    display: flex;
+    color: rgb(52, 24, 24);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.todo .edit{
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: orange;
+    border: 2px solid rgb(192, 129, 12);
+    cursor: pointer;
+
+}
+
+.todo .edit:hover{
+    background-color: rgb(238, 179, 69);
+    transition: 0.4s;
+    color: #fff;
+    border: 2px solid var(--white-alpha-40);
+}
+
+.todo .del{
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: #f44336;
+    border: 2px solid red;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.todo .del:hover{
+    background-color: rgb(243, 81, 59);
+    transition: 0.4s;
+    color: #fff;
+    border: 2px solid var(--white-alpha-40);
+}
+
+
+
+@media (max-width:450px){
+    .todo{
+        max-width:350px;
+    }
+    .todo #task{
+        font-size: 12px;
+    }
+    .todo #b1{
+        padding: 6px;
+    }
+    ul p{
+        font-size: 13px;
+    }
+
+
+}
+
+@media (max-width:400px){
+    .todo{
+        max-width:275px;
+    }
+    .todo #task{
+        font-size: 10px;
+    }
+    .todo #b1{
+        padding: 4px;
+    }
+    ul p{
+        padding: 2px 15px;
+        font-size: 10px;
+    }
+    .todo .del{
+        margin: 5px;
+    }
+}
+
+@media (max-width:280px){
+    .todo{
+        max-width:275px;
+    }
+    .todo #task{
+        font-size: 10px;
+    }
+    .todo #b1{
+        padding: 4px;
+        font-size: 15px;
+    }
+    ul p{
+        padding: 2px 10px;
+        font-size: 10px;
+    }
+    .todo .edit{
+        padding: 6px 10px;
+    }
+
+    .todo .del{
+        padding: 6px 10px;
+        margin: 5px;
+    }
+}
+
